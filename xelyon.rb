@@ -5,21 +5,21 @@
 class Xelyon < Formula
   desc "高速・軽量なLLMコーディングアシスタント"
   homepage "https://github.com/susugadx/xelyon-cli"
-  version "0.44.0"
+  version "0.45.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.44.0/xelyon-cli_0.44.0_darwin_amd64.tar.gz"
-      sha256 "f021574d06e8ff2c7e486092a158be84ed76a46c17f659c5f4aab4749a454066"
+      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.45.0/xelyon-cli_0.45.0_darwin_amd64.tar.gz"
+      sha256 "0aab89008f268248b9f9b9368fca187cfdc84062548365e9a40d3ace289d9da5"
 
       def install
         bin.install "xelyon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.44.0/xelyon-cli_0.44.0_darwin_arm64.tar.gz"
-      sha256 "e58b00d44bf5a16292e6daab1faac4f81d6261f426044d428599eaa4a4d2e459"
+      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.45.0/xelyon-cli_0.45.0_darwin_arm64.tar.gz"
+      sha256 "d0d7bf192b9ca8cd8eaf66db20d7bde9ad08b0004d104053a8ea99a1e27c715c"
 
       def install
         bin.install "xelyon"
@@ -29,15 +29,15 @@ class Xelyon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.44.0/xelyon-cli_0.44.0_linux_amd64.tar.gz"
-      sha256 "af4b31e4b66c3601b7b21a8af45ec4f0e526fe2fa38debcafeda98e5e7305cf9"
+      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.45.0/xelyon-cli_0.45.0_linux_amd64.tar.gz"
+      sha256 "a174f9e8c5c61624636ac2268994d7a44365f314ccf073a7b57f6c8c4b9033a9"
       def install
         bin.install "xelyon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.44.0/xelyon-cli_0.44.0_linux_arm64.tar.gz"
-      sha256 "6e1d4dde4e25336ad2401ec25ea9fcbefa3028e730dfa8d0e716a8c357b23d39"
+      url "https://github.com/susugadx/xelyon-cli/releases/download/v0.45.0/xelyon-cli_0.45.0_linux_arm64.tar.gz"
+      sha256 "58e4aa3d1fae0e0649245bdac5a90cf32b32e9c112b7379ed3fd1684643ee90a"
       def install
         bin.install "xelyon"
       end
