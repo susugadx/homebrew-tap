@@ -11,7 +11,7 @@ class Xelyon < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/susugadx/xelyon-cli/releases/download/v0.46.0/xelyon-cli_0.46.0_darwin_amd64.tar.gz"
-      sha256 "c1ce089e3b0cc7473641c885b9122aa199d0926c23b15ba003e72b3960093a79"
+      sha256 "5d8a0203f9ed8639d60ced9bfae4722578fc59bef847a3e37c3cd02697d9cc06"
 
       def install
         bin.install "xelyon"
@@ -19,7 +19,7 @@ class Xelyon < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/susugadx/xelyon-cli/releases/download/v0.46.0/xelyon-cli_0.46.0_darwin_arm64.tar.gz"
-      sha256 "4bda38a214a0a6467fa6b2b676021e4a6875ba0be321341cd7a98dc9834713f7"
+      sha256 "7e2f5f898a513c846c594bfc7d6ff0873f185566de9fd2d2f8a75ddeb9863f1b"
 
       def install
         bin.install "xelyon"
@@ -30,14 +30,14 @@ class Xelyon < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/susugadx/xelyon-cli/releases/download/v0.46.0/xelyon-cli_0.46.0_linux_amd64.tar.gz"
-      sha256 "8b5c362fce02a245e64cd9c67dc56a08f23d08de45076557369f5e9f2878f71e"
+      sha256 "8f2c08bc2ca0fffb3bab4e73d9405a34aed76c31dd8da60809cf177e9b05eead"
       def install
         bin.install "xelyon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/susugadx/xelyon-cli/releases/download/v0.46.0/xelyon-cli_0.46.0_linux_arm64.tar.gz"
-      sha256 "01371a659593e54f46ad6a11b2ff98f25f8252afb5557ee2ac158e119aea8de2"
+      sha256 "5e18561a67013ee418cca2a9f0f6b2a0b736c8f482139479dd22644d4aa5dcf4"
       def install
         bin.install "xelyon"
       end
